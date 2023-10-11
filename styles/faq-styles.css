@@ -1,0 +1,171 @@
+.faq-container {
+    animation: fadeInUp 2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    font-family: 'Georgia', serif;
+}
+
+header {
+    background-color: #333;
+}
+
+header .navbar-brand {
+    color: #fff;
+    transition: color 0.3s ease;
+    font-size: 60px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+header .navbar-brand:hover {
+    color: rgb(173 216 230);
+}
+
+header .navbar-nav .nav-item .current {
+    color: dodgerblue;
+}
+
+.content {
+    max-width:100%;
+    margin: 10px;
+}
+
+.faq-container {
+    flex: 1;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.faq-item {
+    margin: 40px;
+    padding: 40px;
+    text-align: center;
+}
+
+.faq-question {
+    font-weight: bold;
+    margin-top: 5px;
+    font-family: "Bell MT", cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.faq-answer {
+    font-weight: bold;
+    font-family: "Bell MT", cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.faq-p {
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+}
+
+input {
+    border-radius: 8px;
+    padding: 6px;
+}
+
+button {
+    background: dodgerblue;
+    margin-left: 5px;
+    padding: 5px 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer-custom {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-container {
+    padding-bottom: 60px;
+}
+
+.footer-custom a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-custom a:hover {
+    color: #ddd;
+}
+
+.contact-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.contact-links i {
+    margin-right: 5px;
+    color: #fff;
+}
+
+.contact-links a {
+    margin-right: 10px;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    body {
+        position: relative;
+    }
+
+    .contact-links a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .footer-custom {
+        position: relative;
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        padding: 20px;
+        margin: 10px auto;
+    }
+
+    .faq-container {
+        flex: 1;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        max-width: calc(100% - 30px);
+    }
+
+    .faq-item {
+        margin: 10px;
+        padding: 20px;
+        max-width: calc(100% - 30px);
+    }
+
+    .footer-custom {
+        position: relative;
+        width: 100%;
+    }
+}

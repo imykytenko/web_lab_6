@@ -1,0 +1,137 @@
+body {
+    font-family: 'Georgia', serif;
+}
+
+header {
+    background-color: #333;
+}
+
+header .navbar-brand {
+    color: #fff;
+    transition: color 0.3s ease;
+    font-size: 60px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+header .navbar-brand:hover {
+    color: rgb(173 216 230);
+}
+
+header .navbar-nav .nav-item .current {
+    color: dodgerblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table-actions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.table-actions button:hover {
+    background-color: darkblue;
+}
+
+.footer-custom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-container {
+    padding-bottom: 60px;
+}
+
+.footer-custom a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-custom a:hover {
+    color: #ddd;
+}
+
+.contact-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.contact-links i {
+    margin-right: 5px;
+    color: #fff;
+}
+
+.contact-links a {
+    margin-right: 10px;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .contact-links a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .footer-custom {
+        position: relative;
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .table2 thead {
+        clip: rect(0 0 0 0);
+        position: absolute;
+    }
+
+    .table2 tr {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .table2 td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 20px;
+        text-align: left;
+    }
+
+}

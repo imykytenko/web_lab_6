@@ -1,0 +1,149 @@
+body {
+    font-family: 'Georgia', serif;
+}
+
+header {
+    background-color: #333;
+}
+
+header .navbar-brand {
+    color: #fff;
+    transition: color 0.3s ease;
+    font-size: 60px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+header .navbar-nav .nav-item .current {
+    color: dodgerblue;
+}
+
+header .navbar-brand:hover {
+    color: rgb(173 216 230);
+}
+
+.contacts {
+    width: 100%;
+}
+
+.contacts-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts-map img {
+    width: 100px;
+}
+
+.contacts-map .map {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contacts-map .map:hover {
+    color: #0056b3;
+}
+
+.contacts-item {
+    margin: 30px;
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contacts-item:hover {
+    transform: translateY(-5px);
+}
+
+.title {
+    font-size: 27px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.text {
+    font-size: 20px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.link {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+}
+
+.text_big {
+    margin-top: 10px;
+}
+
+.footer-custom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-container {
+    padding-bottom: 60px;
+}
+
+.footer-custom a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-custom a:hover {
+    color: #ddd;
+}
+
+.contact-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.contact-links i {
+    margin-right: 5px;
+    color: #fff;
+}
+
+.contact-links a {
+    margin-right: 10px;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .contact-links a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .footer-custom {
+        position: relative;
+        width: 100%;
+    }
+
+    .contacts-item {
+        margin: 10px;
+    }
+
+    .contacts {
+        text-align: center;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+    }
+
+    .contacts-map {
+        margin: 12px;
+    }
+}
