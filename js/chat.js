@@ -17,7 +17,7 @@ function sendMessage(user) {
 
     const newMessage = document.createElement('p');
     newMessage.textContent = message;
-    newMessage.classList.add('message'); // Додайте клас .message до нового повідомлення
+    newMessage.classList.add('message');
 
     const messageContainer = document.createElement('div');
     messageContainer.classList.add('message-container');
